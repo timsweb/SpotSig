@@ -11,7 +11,7 @@ add in the document set de-duplication (with partitioning/sorting etc).
 Text entered into the analyse function isn't sanitised in any way; that's up to
 the calling code.
 
- ##Example useage
+##Example useage
 ```PHP
 $ss = new \SpotSig\SpotSig();
 $doc1 = new \SpotSig\DocumentIndex($ss->analyse("Large sample text one"));
