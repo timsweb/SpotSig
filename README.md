@@ -1,7 +1,8 @@
 #SpotSig
 This is a quickly thrown together PHP implementation of the Spot Sig algorithm
 based on a couple of bits from the java code found at
-https://github.com/luismmontielg/spotsigs.
+https://github.com/luismmontielg/spotsigs. More information on the algorithm
+can be found at http://www.slideshare.net/infoblog/spot-sigs-presentation?from=ss_embed.
 
 ##Missing features
 At the moment it only generates the spot signatures and does a Jaccard

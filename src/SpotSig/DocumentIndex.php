@@ -91,6 +91,9 @@ class DocumentIndex
      */
     public function jaccardCompare(DocumentIndex $b, $threshold = 0)
     {
+        if ($this->getCardinality() == 0 || $b->getCardinality() == 0) {
+            return 0;
+        }
         $upperMax = max([$this->getCardinality(), $b->getCardinality()]);
         $upperUnion = $this->getCardinality() + $b->getCardinality();
         $sMin = $sMax = $sC1 = $sC2 = $bound = 0;
@@ -112,7 +115,7 @@ class DocumentIndex
                 }
             }
         }
-        return $sMin  / ($sMax + ($this->getCardinality() - $sC1) + ($b->getCardinality() - $sC2));
+        return $sMin / ($sMax + ($this->getCardinality() - $sC1) + ($b->getCardinality() - $sC2));
 
         /* This is the original java version of this function for reference.
          *
