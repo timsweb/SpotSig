@@ -6,8 +6,8 @@ can be found at http://www.slideshare.net/infoblog/spot-sigs-presentation?from=s
 
 ##Missing features
 At the moment it only generates the spot signatures and does a Jaccard
-comparison of two documents. Anyone wanted to add to this library may want to
-add in the document set de-duplication (with partitioning/sorting etc).
+comparison of two documents. Anyone wanting to add to this library may want to
+add in the document-set-de-duplication (with partitioning/sorting etc).
 
 Text entered into the analyse function isn't sanitised in any way; that's up to
 the calling code.
